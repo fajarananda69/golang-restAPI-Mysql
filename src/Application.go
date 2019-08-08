@@ -10,11 +10,19 @@ import (
 )
 
 func main() {
+	// connection
 	db := config.DBInint()
 	inDB := controllers.InDB{DB: db}
 
 	router := gin.Default()
 
-	router.GET("/person", inDB.GetPersons)
+	//get data by id
+	router.GET("/mysql/:id", inDB.GetDataById)
+	//get all data
+	router.GET("/mysql", inDB.GetAllData)
+	//insert data
+	router.POST("/mysql/:id/:name/:age/:grade", inDB.InsertDB)
+
+	// set server port
 	router.Run(":3000")
 }
