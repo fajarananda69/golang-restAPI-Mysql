@@ -1,7 +1,15 @@
 # golang-restAPI-Mysql
-Build simpel restAPI with golang programming language to access mysql. in this project we use driver `gin` to build controller restAPI 
+Build simpel restAPI with golang programming language to access mysql. in this project we use `gin` driver to build controller restAPI 
 
-## install driver
+## Install and SETUP GO
+Download and configure your workspace with latest version of Go and correct environment path.
+- [Last Version](https://golang.org/dl/)
+- [Windows](http://www.wadewegner.com/2014/12/easy-go-programming-setup-for-windows/)
+- [Linux](http://www.tecmint.com/install-go-in-linux/)
+
+
+## Install driver
+On your Editor open terminal to access your directory project and install driver
 ```
 go get -u "github.com/gin-gonic/gin"
 ```
@@ -15,7 +23,6 @@ go get -u "github.com/jinzhu/gorm/dialects/mysql"
 go get -u "github.com/go-sql-driver/mysql"
 ```
 
-
 ## connection
 ```
 func DBInint() *gorm.DB {
@@ -28,4 +35,9 @@ func DBInint() *gorm.DB {
 	db.AutoMigrate(structs.TableName{})
 	return db
 }
+
+```
+## Run API
+``` 
+go run *.go
 ```
