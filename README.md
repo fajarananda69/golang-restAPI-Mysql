@@ -1,5 +1,5 @@
 # golang-restAPI-Mysql
-Build simper restAPI with golang programming language
+Build simpel restAPI with golang programming language to access mysql
 
 ## install driver
 ```
