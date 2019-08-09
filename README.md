@@ -1,5 +1,5 @@
 # golang-restAPI-Mysql
-Build simpel restAPI with golang programming language to access mysql. in this project we use driver `gin` to build controller resAPI 
+Build simpel restAPI with golang programming language to access mysql. in this project we use driver `gin` to build controller restAPI 
 
 ## install driver
 ```
