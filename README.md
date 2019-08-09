@@ -39,5 +39,5 @@ func DBInint() *gorm.DB {
 ```
 ## Run API
 ``` 
-go run *.go
+go run Application.go
 ```
