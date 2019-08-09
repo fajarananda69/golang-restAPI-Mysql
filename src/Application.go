@@ -22,6 +22,10 @@ func main() {
 	router.GET("/mysql", inDB.GetAllData)
 	//insert data
 	router.POST("/mysql/:id/:name/:age/:grade", inDB.InsertDB)
+	//update data
+	router.PUT("/mysql/", inDB.UpdateDB)
+	//delete data
+	router.DELETE("/mysql/:id", inDB.DeleteDB)
 
 	// set server port
 	router.Run(":3000")
